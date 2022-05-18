@@ -1,6 +1,6 @@
 var buffer1 = new Buffer.alloc(256);
 var buffer2 = new Buffer.alloc(300);
-
+console.log(buffer1)
 for (var i = 0; i < 26; i++) {
 	buffer1[i] = i + 97;
 }

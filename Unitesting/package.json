@@ -1,0 +1,23 @@
+{
+  "name": "unitesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TestModule.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "istanbul": "^0.4.5",
+    "process": "^0.11.10",
+    "tcp": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
