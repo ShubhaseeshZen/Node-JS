@@ -1,9 +1,9 @@
 //extends layout
 
 block content
-  h1  #{title}
-  br
-  hr
-  ul
-    each val in data
-      li= val._id
+h1  #{title}
+br
+hr
+ul
+  each val in data
+    li= val.name.first

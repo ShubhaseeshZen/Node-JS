@@ -9,4 +9,4 @@ module.exports = function (app) {
         res.send('zipcode to radius')
     })
 };
-//http://localhost:8000/radius/99501/27
+

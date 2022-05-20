@@ -1,0 +1,23 @@
+{
+  "name": "webscrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "shubhaseesh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  }
+}

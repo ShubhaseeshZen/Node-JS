@@ -1,0 +1,12 @@
+.about{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+}
+.about li{
+    border: 1px;
+    height: 40px;
+    width:50px;
+    padding: 10px;
+}

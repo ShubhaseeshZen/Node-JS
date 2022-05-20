@@ -4,12 +4,14 @@ var router = express.Router();
 var books = [
 	{ id: 001, name: "Sofwtare Engineering", author: "David Pressman", rating: 10 },
 	{ id: 002, name: "Digital Communication", author: "No Idea", rating: 8 },
+	{ id: 003, name: "Atlas", author: "David Warner", rating: 9 },
+	{ id: 004, name: "Sofwtare Architecture", author: "Hilo Singh", rating: 10 },
 ];
 
 router.get('/', function (req, res) {
 	res.json(books);
 });
-router.get()
+
 router.get('/:id([0-9]{3,})', function (req, res) {
 	var book1 = books.filter(function (book) {
 		if (book.id == req.params.id) {
@@ -25,7 +27,7 @@ router.get('/:id([0-9]{3,})', function (req, res) {
 	}
 });
 
-router.get('/:id([1-9]{1,})', function (req, res) {
+router.get('/:id([1-9]{3,})', function (req, res) {
 	var book1 = books.filter(function (book) {
 		if (book.rating == req.params.id) {
 			return true;
@@ -39,6 +41,7 @@ router.get('/:id([1-9]{1,})', function (req, res) {
 		res.send("book not found");
 	}
 });
+
 router.post('/', function (req, res) {
 	if (!req.body.name || !req.body.author || !req.body.rating) {
 		res.status(400);
