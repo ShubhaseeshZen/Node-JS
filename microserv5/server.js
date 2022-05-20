@@ -8,7 +8,7 @@ var connectionString = "mongodb://127.0.0.1:27017/hrms"
 const routes = require('../microserv5/api/routes');
 
 routes(app);
-app.get('/billsReimbursement',(req,res)=>{
+app.get('/api/billsReimbursement',(req,res)=>{
     res.json({
         "statusCode" :200,
         "statusMessage": "success"
@@ -23,11 +23,11 @@ app.get('/billsReimbursement',(req,res)=>{
 // });
 
 app.listen(port, (req,res)=> {
-    MongoClient.connect(connectionString, function(err, db){
-        if(err) console/console.error((err));
-        console.log("DB connected");
-        dbobj = db.db("hrms")
-    })
+    // MongoClient.connect(connectionString, function(err, db){
+    //     if(err) console/console.error((err));
+    //     console.log("DB connected");
+    //     dbobj = db.db("hrms")
+    // })
     console.log(`http://localhost:${port}`);
 });
 

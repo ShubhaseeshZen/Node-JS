@@ -15,12 +15,10 @@ export class AppComponent implements OnInit {
     this.getBillsFromApi();
   }
   getBillsFromApi() {
-    this.service.getBills().subscribe(
-      (response) => {
-        console.log('Response from API is ', response);
-      },
-      (error) => {
-        console.log('Error is ', error);
+    this.service.getBills().subscribe( {
+        next: (v) => console.log(v),
+        error: (e) => console.error(e),
+        complete: () => console.info('complete')
       }
     );
   }
