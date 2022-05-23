@@ -1,30 +1,32 @@
 <header class="header">Employee List</header>
-<div class="btn">
-</div>
+<div class="btn"></div>
 <div>
-  <!-- <ul *ngFor="let employee of employeeList">
-    <li>{{employee.empname}}</li>
-  </ul> -->
-  <table class="table mt-3">
+  <table mat-table class="mat-elevation-z8">
     <thead>
-        <tr>
-            <th scope="col">Employee ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">Department</th>
-            <th scope="col">Address</th>
-            <th scope="col">Salary</th>
-        </tr>
+      <tr mat-header-row>
+        <ng-container>
+          <th mat-header-cell>Employee ID</th>
+          <th mat-header-cell>Name</th>
+          <th mat-header-cell>Age</th>
+          <th mat-header-cell>Department</th>
+          <th mat-header-cell>Department</th>
+          <th mat-header-cell>Address</th>
+          <th mat-header-cell>Salary</th>
+        </ng-container
+        >
+      </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of employeeList">
-            <td>{{item.id}}</td>
-            <td>{{item.empname}}</td>
-            <td>{{item.empage}}</td>
-            <td>{{item.department}}</td>
-            <td>{{item.address.country}}</td>
-            <td>{{item.salary}}</td>
-        </tr>
+      <tr mat-header-row *ngFor="let item of employeeList">
+        <ng-container>
+          <td mat-cell>{{ item.id }}</td>
+          <td mat-cell>{{ item.empname }}</td>
+          <td mat-cell>{{ item.empage }}</td>
+          <td mat-cell>{{ item.department }}</td>
+          <td mat-cell>{{ item.address.country }}</td>
+          <td mat-cell>{{ item.salary }}</td>
+        </ng-container>
+      </tr>
     </tbody>
-</table>
+  </table>
 </div>
