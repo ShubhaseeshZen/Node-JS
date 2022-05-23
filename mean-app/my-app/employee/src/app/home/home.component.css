@@ -1,0 +1,30 @@
+.example-container {
+  height: 80px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+.header{
+  height: 80px;
+  background-color: rgb(24, 77, 221);
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+}
+.btn{
+  height: 40px;
+  background-color: rgb(10, 40, 121);
+  color: white;
+  text-align: center;
+  font-size: large;
+  border: none;
+}
+.btn button {
+  height: 40px;
+  background-color: rgb(10, 40, 121);
+  color: white;
+  text-align: center;
+  font-size: large;
+  border: none;
+
+}
