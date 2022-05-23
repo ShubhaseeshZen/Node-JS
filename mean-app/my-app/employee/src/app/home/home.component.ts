@@ -16,12 +16,7 @@ export class HomeComponent implements OnInit {
     this.appService
       .getEmployee('http://localhost:3000/users')
       .subscribe(data => {
-      data.forEach((element: employee) => {
-        this.employeeList.push(element)
-
-        });
-        // this.employeeList.push(data);
-        // this.raw = JSON.stringify(data);
+        this.employeeList = data.employees_list;
       }
         //{
         // next: (v) => this.data=v,

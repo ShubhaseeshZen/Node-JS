@@ -2,8 +2,29 @@
 <div class="btn">
 </div>
 <div>
-  <ul *ngFor="let employee of employeeList">
-    <li>{{employee}}</li>
-  </ul>
-  <!-- <p>{{raw}}</p> -->
+  <!-- <ul *ngFor="let employee of employeeList">
+    <li>{{employee.empname}}</li>
+  </ul> -->
+  <table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Employee ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Department</th>
+            <th scope="col">Address</th>
+            <th scope="col">Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of employeeList">
+            <td>{{item.id}}</td>
+            <td>{{item.empname}}</td>
+            <td>{{item.empage}}</td>
+            <td>{{item.department}}</td>
+            <td>{{item.address.country}}</td>
+            <td>{{item.salary}}</td>
+        </tr>
+    </tbody>
+</table>
 </div>

@@ -3,8 +3,6 @@ export interface employee {
   empname: string;
   empage: number;
   department: string;
-  address: object;
+  address: { country: string; location: [] };
   salary: number;
 }
-
-
