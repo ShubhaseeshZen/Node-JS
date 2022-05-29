@@ -41,8 +41,8 @@ export class EmployeeEditComponent implements OnInit {
   }
 
   // Choose options with select-dropdown
-  updateProfile(e: any) {
-    this.editForm.get('designation').setValue(e, {
+  updateProfile(event: any) {
+    this.editForm.get('designation').setValue(event.value, {
       onlySelf: true,
     });
   }

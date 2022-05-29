@@ -37,7 +37,7 @@
           <label for="inputPassword3">Designation</label>
           <select
             class="custom-select form-control"
-            ngModel (ngModelChange)="updateProfile($event.target.value)"
+            (change)="updateProfile($event.target)"
             formControlName="designation"
           >
             <option value="">Choose...</option>
