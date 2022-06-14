@@ -13,7 +13,7 @@ export class EmployeeEditComponent implements OnInit {
   submitted = false;
   editForm: any;
   employeeData: Employee[] = [];
-  EmployeeProfile: any = ['Finance', 'BDM', 'HR', 'Sales', 'Admin'];
+  EmployeeProfile: any = ['Finance', 'BDM', 'HR', 'Sales','I.T.', 'Training'];
 
   constructor(
     public fb: FormBuilder,
